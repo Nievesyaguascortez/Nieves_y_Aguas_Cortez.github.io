@@ -1,0 +1,247 @@
+body{
+	/* backround-image es para la imagen de fondo */
+	background-image:url("../imagenes/fondo6.jpg");
+	/* para tipografia de letras */
+	font-family:"Arial Rounded MT Bold","Tahoma","Lucisa Console","Courier New";
+	/* color de las letras */
+	color:#000000;
+	/* para el tamaño de letras en pixeles */
+	font-size:60px;
+	text-align:center;
+}
+hr{
+	/* border es para linea
+	el grosor se inidca en pixeles, indicamos el tipo de linea y el codigode color*/
+	border:3px solid #2980B9;
+	/* width es para el ancho de la linea*/
+	width:80%;
+	border-radius:5px;
+}
+p{
+	text-align:justify;
+	font-size:25px;
+	color:#2874A6;
+	line-height:1.5;
+	background-color:#005000;
+	/* Espacio en cada letra */
+	letter-spacing:1px;
+}
+.mano{
+	background-color:#82E0AA;
+}
+table,tr,td{
+	border:1px solid #2874A6;
+	border-spacing:0px;
+	background-color:#82E0AA;
+	/* atributos para el texto de la tabla */
+	font-size:15px;
+	text-align:center;
+	color:#2874A6;
+}
+/* clase para los pies de la página*/
+.pie{
+	font-family:crash;
+	text-align:center;
+	font-size:11px;
+	font-weight:bold;
+	color:#3498DB;
+	
+}
+.cabeza{
+	font-family:virgo;
+	text-align:center;
+	font-size:45px;
+	font-weight:bold;
+	color:#000000;
+}
+/* Divs */
+div#top{
+	font-family:grafiti;
+	width:100%;
+	height:75px;
+	/*background-image:linear-gradient(#1463B8,#2514B8);*/
+	/*background-image:radial-gradient(#1463B8,#2514B8);*/
+	background-image:url("../imagenes/nievef.jpg");
+}
+div#tunometecabrasarabambiche{
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(#1463B8,#2514B8);
+}
+div#pequeño{
+	width:100%;
+	height:100px;
+	background-image:radial-gradient(#005000,#008000);
+}
+/* Carrousel de imagenes*/
+.carrousel{
+	width:600px;
+	margin:auto;
+	box-sizing:border-box; 
+}
+.contecarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+.itemcarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouseltarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+.itemcarrouselarrows> i:hover{
+	cursor:pointer;
+}
+.contecarrouselcontroller{
+	width:100%;
+	display:flex;
+	justify-content:space-evenly;
+}
+.contecarrouselcontroller>a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+.itemcarrouselarrows>a>i{
+	color:white;
+}
+.caja{
+	height:300px;
+	width:250px;
+	background:#F8DBF6;
+	border:1px solid #F8DBF6;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.caja:hover{
+	box-shadow: 0 0 10px red;
+	transform:scale(1.3);
+}
+.caja-texto{
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size:20px;
+	color:blue;
+	font-weight:bold;
+}
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+.navegacion{
+	font-family:crash;
+	display:flex;
+	height:100px;
+}
+.navegacion-item{
+	flex:1;
+	color:#black;
+	font-weight:bold;
+	font-size:15px;
+	display:flex;
+	transition: flex-grow 0.2s;
+	justify-content:center;
+	align-items:center;
+}
+.navegacion-titulo{
+	margin:0;
+	transform:rotate(-90deg);
+	transition:transform 0.2s 0.2s;
+}
+.navegacion-item:hover{
+	flex-grow:10;
+}
+.navegacion-item:hover .navegacion-titulo{
+	transform:rotate(0);
+}
+.navegacion-item:nth-child(1){
+	background:#85C1E9;
+}
+.navegacion-item:nth-child(2){
+	background:#76D7C4;
+}
+.navegacion-item:nth-child(3){
+	background:#F9E79F;
+}
+.navegacion-item:nth-child(4){
+	background:#D7DBE2;
+}
+.contacto{
+	/*position:absolute;*/
+	right:10;
+	height:245px;
+	width:100%;
+	background:#F8DBF6;
+	border:1px solid #F8DBF6;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+}
+.texto-contacto{
+	right:10;
+	padding-top:40px;
+	font-size:30px;
+}
+.imagen{
+	padding-top:40px;
+	position:absolute;
+	left:0;
+	height:200px;
+	width:300px;
+	background:#F8DBF6;
+	border:1px solid #F8DBF6;
+	margin:5px;
+	color:black;
+	text-align:left;
+	display:inline-block;
+}
+@font-face{
+	font-family:crash;	
+	src: url(../Fuentes/crash.ttf);
+}
+@font-face{
+	font-family:MoogalatorFiller;	
+	src: url(../Fuentes/MoogalatorFiller.ttf);
+}
+@font-face{
+	font-family:virgo;	
+	src: url(../Fuentes/virgo.ttf);
+}
+@font-face{
+	font-family:segundo;	
+	src: url(../Fuentes/segundo.ttf);
+}
+@font-face{
+	font-family:grafiti;	
+	src: url(../Fuentes/grafiti.otf);
+}
+
+
+
+
+
+
